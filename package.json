@@ -1,13 +1,13 @@
 {
-  "name": "ull-esit-inf-dsi-23-24-prct04-arrays-tuples-enums-alu0101413938",
+  "name": "lunes11-alu0101413938",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "cover": "nyc npm test && nyc report --reporter=lcov",
     "doc": "typedoc",
-    "test": "mocha",
-    "coverage": "nyc npm test && nyc report --reporter=lcov"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -15,18 +15,19 @@
   "devDependencies": {
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.21",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "chai": "^4.4.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
+    "fs": "0.0.1-security",
     "mocha": "^10.3.0",
+    "nyc": "^15.1.0",
     "prettier": "^3.2.4",
     "ts-node": "^10.9.2",
     "tsc-watch": "^6.0.4",
-    "typedoc": "^0.25.8"
-  },
-  "dependencies": {
+    "typedoc": "^0.25.8",
     "typescript": "^5.3.3"
   }
 }
