@@ -1,6 +1,6 @@
-import { Observable } from "./observable";
-import { Observer } from "./observer";
-import { FeedEventType } from "./eventType";
+import { Observable } from "./observable.js";
+import { Observer } from "./observer.js";
+import { FeedEventType } from "./eventType.js";
 
 /**
  * Class Feed that implements the Observable interface,

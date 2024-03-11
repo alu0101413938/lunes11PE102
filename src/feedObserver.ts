@@ -1,7 +1,7 @@
-import { FeedEventType } from "./eventType";
-import { Observable } from "./observable";
-import { Observer } from "./observer";
-import { Feed } from "./feed";
+import { FeedEventType } from "./eventType.js";
+import { Observable } from "./observable.js";
+import { Observer } from "./observer.js";
+import { Feed } from "./feed.js";
 
 /**
  * Class FeedObserver that implements the interface Observer
@@ -10,6 +10,7 @@ import { Feed } from "./feed";
 export class FeedObserver implements Observer {
   constructor(private id: number, private name: string) {
   }
+
   /**
    * @returns Devuelve el id
    */
