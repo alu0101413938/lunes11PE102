@@ -10,15 +10,25 @@ import { Feed } from "./feed";
 export class FeedObserver implements Observer {
   constructor(private id: number, private name: string) {
   }
-
+  /**
+   * @returns Devuelve el id
+   */
   getId() {
     return this.id;
   }
   
+  /**
+   * @returns Devuelve el nombre
+   */
   getName() {
     return this.name;
   }
 
+  /**
+   * Permite actualizar a todos los subcriptores de que se 
+   * ha hecho una nueva release 
+   * @param observable Feed que pueden ser ovservables
+   */
   update(observable: Observable) {
     if (observable instanceof Feed) {
       switch(observable.getEventType()) {
